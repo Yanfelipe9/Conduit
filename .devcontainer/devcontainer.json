@@ -2,12 +2,13 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres
 {
 	"name": "Node.js & PostgreSQL",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+	"features": {
+		"ghcr.io/itsmechlark/features/postgresql:1": {"version": "15"}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or with the host.
