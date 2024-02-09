@@ -14,4 +14,3 @@ dropdb conduit
 createdb conduit
 
 npm install 
-npm run dev 
