@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "\n[PSQL]:"
+psql --version   
+
+echo "\n[NODE]:"
+node -v  
+
+echo "\n[START POSTGRES]:"
+sudo /etc/init.d/postgresql start
+
+echo "\n[RESTORE DB]:"
+dropdb conduit
+createdb conduit
+
+npm install 
+npm run dev 

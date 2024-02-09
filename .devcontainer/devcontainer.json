@@ -15,7 +15,7 @@
 	"forwardPorts": [3000,3001,5432],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	"postCreateCommand": "bash start-env",
 
 	// Configure tool-specific properties.
 	"customizations": {
